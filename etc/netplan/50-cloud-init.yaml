@@ -1,0 +1,304 @@
+# This file is generated from information provided by the datasource.  Changes
+# to it will not persist across an instance reboot.  To disable cloud-init's
+# network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    version: 2
+    ethernets:
+        enp1s0f0:
+            accept-ra: false
+            addresses:
+            - 2001:41d0:306:37b8::/56
+            dhcp4: true
+            match:
+                macaddress: a8:a1:59:2b:41:18
+            nameservers:
+                addresses:
+                - 2001:41d0:3:163::1
+            routes:
+            -   to: default
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:3700::/57
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:3780::/59
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37c0::/59
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37a0::/60
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37e0::/60
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b0::/61
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37f0::/61
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37bc::/62
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37f8::/62
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ba::/63
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37fc::/63
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b9::/64
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37fe::/64
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:8000::/65
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:8000::/65
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:4000::/66
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:4000::/66
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:2000::/67
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:2000::/67
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:1000::/68
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:1000::/68
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:800::/69
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:800::/69
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:400::/70
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:400::/70
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:200::/71
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:200::/71
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:100::/72
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:100::/72
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:80::/73
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff::/73
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:40::/74
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:80::/74
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:20::/75
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:c0::/75
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:10::/76
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:e0::/76
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:8::/77
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:f0::/77
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:4::/78
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:f8::/78
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:2::/79
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:fc::/79
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:1::/80
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:fe::/80
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:8000::/81
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:8000::/81
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:4000::/82
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:4000::/82
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:2000::/83
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:2000::/83
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:1000::/84
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:1000::/84
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:800::/85
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:800::/85
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:400::/86
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:400::/86
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:200::/87
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:200::/87
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:100::/88
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:100::/88
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:80::/89
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff::/89
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:40::/90
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:80::/90
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:20::/91
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:c0::/91
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:10::/92
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:e0::/92
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:8::/93
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:f0::/93
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:4::/94
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:f8::/94
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:2::/95
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:fc::/95
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8:0:1::/96
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:fe::/96
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::8000:0/97
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:8000:0/97
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::4000:0/98
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:4000:0/98
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::2000:0/99
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:2000:0/99
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::1000:0/100
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:1000:0/100
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::800:0/101
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:800:0/101
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::400:0/102
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:400:0/102
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::200:0/103
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:200:0/103
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::100:0/104
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:100:0/104
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::80:0/105
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff::/105
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::40:0/106
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:80:0/106
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::20:0/107
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:c0:0/107
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::10:0/108
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:e0:0/108
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::8:0/109
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:f0:0/109
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::4:0/110
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:f8:0/110
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::2:0/111
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:fc:0/111
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::1:0/112
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:fe:0/112
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::8000/113
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:8000/113
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::4000/114
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:4000/114
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::2000/115
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:2000/115
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::1000/116
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:1000/116
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::800/117
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:800/117
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::400/118
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:400/118
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::200/119
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:200/119
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::100/120
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:100/120
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::80/121
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:0/121
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::40/122
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:80/122
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::20/123
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:c0/123
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::10/124
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:e0/124
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::8/125
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:f0/125
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::4/126
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:f8/126
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::2/127
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:fc/127
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37b8::1/128
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            -   to: 2001:41d0:306:37ff:ff:ff:ff:fe/128
+                via: 2001:41d0:306:37ff:ff:ff:ff:ff
+            set-name: enp1s0f0

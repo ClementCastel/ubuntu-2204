@@ -1,0 +1,5 @@
+UUID=83c16368-c410-4e6c-9499-6958a51949a6	/	ext4	defaults	0	1
+UUID=d0f259f3-69e3-4238-8988-15ef8bbd46ac	/boot	ext4	defaults	0	0
+LABEL=EFI_SYSPART	/boot/efi	vfat	defaults	0	1
+UUID=343c4a05-59d3-48f1-9bfb-2abcb53bb2fc	swap	swap	defaults	0	0
+UUID=6959ff3c-c302-4af6-8c05-2284ac330e71	swap	swap	defaults	0	0
